@@ -708,11 +708,11 @@ body {
   gap: 24px;
   width: max-content;
   will-change: transform;
-  animation: skillsTickerLeft 40s linear infinite;
+  animation: skillsTickerLeft 75s linear infinite;
 }
 
 .skills-row.reverse {
-  animation: skillsTickerRight 40s linear infinite;
+  animation: skillsTickerRight 75s linear infinite;
 }
 
 @keyframes skillsTickerLeft {
