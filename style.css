@@ -196,7 +196,9 @@ body {
    Hero Section
    ========================================================================== */
 .hero-section {
-  position: relative;
+  position: sticky;
+  top: 0;
+  height: 100vh;
   min-height: 100vh;
   padding: 120px 48px 48px;
   display: flex;
@@ -204,6 +206,7 @@ body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  z-index: 1;
 }
 
 .hero-bg-title-wrap {
@@ -304,9 +307,9 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-light);
   border-radius: var(--radius-xl);
-  margin: 20px 24px;
+  margin: 0 24px 20px;
   padding: 100px 64px;
-  box-shadow: 0 30px 100px rgba(0,0,0,0.4);
+  box-shadow: 0 -20px 80px rgba(0,0,0,0.8), 0 30px 100px rgba(0,0,0,0.6);
 }
 
 .intro-grid {
@@ -408,6 +411,9 @@ body {
    "What I Do" Interactive Section
    ========================================================================== */
 .what-i-do-section {
+  position: relative;
+  z-index: 10;
+  background-color: var(--bg-primary);
   padding: 120px 48px;
   max-width: 1300px;
   margin: 0 auto;
