@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florence Ogunbore — Product Manager & Web Designer</title>
+  <meta name="description" content="Florence is a multi-award winning product manager based in Lagos, Nigeria with 5+ years experience in tech.">
+  
+  <!-- Google Fonts: Bebas Neue for display, Plus Jakarta Sans for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Glowing Vignette Aura (The signature Framer viewport blue edge glow) -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Interactive Custom Cursor -->
+  <div class="cursor-dot" id="cursor" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="site-nav" id="main-nav">
+      <a href="#" class="nav-brand" data-open-overlay="home">Florence O.</a>
+      <div class="nav-links">
+        <a href="#" class="nav-link active" data-open-overlay="home">Home</a>
+        <a href="#" class="nav-link" data-open-overlay="about">About Me</a>
+        <a href="#" class="nav-link" data-open-overlay="work">Work</a>
+        <a href="#" class="nav-link" data-open-overlay="contact">Contact Me</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Portfolio Page Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-title-wrap">
+        <h1 class="hero-bg-title">ADITYAVIR</h1>
+      </div>
+
+      <div class="hero-portrait-card">
+        <img src="assets/hero_florence.jpg" alt="Florence Ogunbore" loading="eager">
+      </div>
+
+      <div class="hero-bottom-row">
+        <p class="hero-bio-short">
+          Adityavir is a new grad based in India.
+        </p>
+
+        <div class="hero-social-links">
+          <a href="https://www.linkedin.com/in/adityavir-singh-randhawa-953ab0339/" target="_blank" rel="noopener noreferrer" class="hero-social-link">LinkedIn</a>
+          <a href="assets/resume.pdf" target="_blank" class="hero-social-link">Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Section (Dark Curved Card) -->
+    <section class="intro-section" id="intro">
+      <div class="intro-grid">
+        <div class="intro-content">
+          <h2 class="intro-headline">
+            Hello, I'm Adityavir, a <span class="highlight">Product Manager</span> building AI products from idea to execution.
+          </h2>
+          <p class="intro-body">
+            I turn ambiguous problems into clear product requirements, strategies, roadmaps, and execution plans — working across AI, engineering, research, and design to build products that solve meaningful problems.
+          </p>
+          <a href="#" class="pill-btn outline-light" data-open-overlay="about">
+            More about Adityavir &rarr;
+          </a>
+        </div>
+
+        <div class="intro-image-wrap">
+          <img src="assets/adityavir_photo.jpg" alt="Adityavir" style="object-position: center center;">
+        </div>
+      </div>
+    </section>
+
+    <!-- "What I Do" Interactive Section -->
+    <section class="what-i-do-section" id="services">
+      <div class="section-header-badge">
+        <h2>What I Do</h2>
+        <span class="sparkle-icon">&#10024;</span>
+      </div>
+
+      <div class="services-interactive-grid">
+        <div class="services-selector-list">
+          <div class="service-item active" data-service="web">
+            <h3 class="service-item-title">Web Design</h3>
+          </div>
+          <div class="service-item" data-service="pm">
+            <h3 class="service-item-title">Product Management</h3>
+          </div>
+        </div>
+
+        <div class="service-display-card">
+          <div>
+            <div class="service-card-tag" id="service-detail-title">Web Design</div>
+            <div class="service-card-desc" id="service-detail-desc">
+              Transforming ideas into fully functional websites using best web design practices.
+            </div>
+          </div>
+          <div class="service-card-preview">
+            <img src="assets/service_preview.jpg" id="service-detail-img" alt="Service Showcase">
+          </div>
+        </div>
+      </div>
+
+      <div class="services-cta-wrap">
+        <a href="#" class="pill-btn filled-dark" data-open-overlay="contact">
+          Let's Make Magic &rsaquo;
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Work Section (Dark Curved Card with Marquee) -->
+    <section class="featured-work-section" id="work">
+      <!-- Infinite Marquee Header -->
+      <div class="marquee-container" aria-hidden="true">
+        <div class="marquee-content">
+          <span class="marquee-text">Featured Work</span>
+          <span class="marquee-text">&bull;</span>
+          <span class="marquee-text">Featured Work</span>
+          <span class="marquee-text">&bull;</span>
+          <span class="marquee-text">Featured Work</span>
+          <span class="marquee-text">&bull;</span>
+          <span class="marquee-text">Featured Work</span>
+          <span class="marquee-text">&bull;</span>
+          <span class="marquee-text">Featured Work</span>
+          <span class="marquee-text">&bull;</span>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Good -->
+        <div class="project-card" data-project="good">
+          <div class="project-thumbnail-wrap">
+            <img src="assets/project_good.png" alt="Good Online Platform" loading="lazy">
+          </div>
+          <div class="project-info-bar">
+            <div class="project-title-group">
+              <h3>Good</h3>
+              <p>2025</p>
+            </div>
+            <div class="project-tags-group">
+              <span class="project-role-badge">Product Management</span>
+              <div class="project-arrow-btn">&#8599;</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Shop Okien -->
+        <div class="project-card" data-project="okien">
+          <div class="project-thumbnail-wrap">
+            <img src="assets/project_okien.png" alt="Shop Okien" loading="lazy">
+          </div>
+          <div class="project-info-bar">
+            <div class="project-title-group">
+              <h3>Shop Okien</h3>
+              <p>2025</p>
+            </div>
+            <div class="project-tags-group">
+              <span class="project-role-badge">E-Commerce, Web Dev</span>
+              <div class="project-arrow-btn">&#8599;</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: DevFest Lagos -->
+        <div class="project-card" data-project="devfest">
+          <div class="project-thumbnail-wrap">
+            <img src="assets/project_devfest.png" alt="DevFest Lagos 2025" loading="lazy">
+          </div>
+          <div class="project-info-bar">
+            <div class="project-title-group">
+              <h3>DevFest Lagos 2025</h3>
+              <p>2025</p>
+            </div>
+            <div class="project-tags-group">
+              <span class="project-role-badge">Product Lead</span>
+              <div class="project-arrow-btn">&#8599;</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Official Tope Alabi -->
+        <div class="project-card" data-project="tope">
+          <div class="project-thumbnail-wrap">
+            <img src="assets/project_tope.png" alt="Official Tope Alabi Platform" loading="lazy">
+          </div>
+          <div class="project-info-bar">
+            <div class="project-title-group">
+              <h3>Official Tope Alabi</h3>
+              <p>2024</p>
+            </div>
+            <div class="project-tags-group">
+              <span class="project-role-badge">Web Dev</span>
+              <div class="project-arrow-btn">&#8599;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-all-projects-wrap">
+        <a href="#" class="pill-btn outline-light" data-open-overlay="work">
+          View all Projects &rsaquo;
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills & Tools Infinite Tickers -->
+    <section class="skills-section" id="skills">
+      <h2 class="skills-title">
+        <span>&#128188;</span> Skills and Tools
+      </h2>
+
+      <div class="skills-row-wrap">
+        <div class="skills-row">
+          <span class="skill-pill">Product Strategy</span>
+          <span class="skill-pill">Product Discovery</span>
+          <span class="skill-pill">Product Sense</span>
+          <span class="skill-pill">SDLC</span>
+          <span class="skill-pill">Design Thinking</span>
+          <span class="skill-pill">Roadmapping</span>
+          <span class="skill-pill">Go-To-Market</span>
+          <span class="skill-pill">Metrics & Analytics</span>
+          <span class="skill-pill">Product Strategy</span>
+          <span class="skill-pill">Product Discovery</span>
+          <span class="skill-pill">Product Sense</span>
+          <span class="skill-pill">SDLC</span>
+        </div>
+      </div>
+
+      <div class="skills-row-wrap">
+        <div class="skills-row reverse">
+          <span class="skill-pill">User Research</span>
+          <span class="skill-pill">Notion</span>
+          <span class="skill-pill">Leadership</span>
+          <span class="skill-pill">Jira</span>
+          <span class="skill-pill">Web Design</span>
+          <span class="skill-pill">Documentation</span>
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Prototyping</span>
+          <span class="skill-pill">User Research</span>
+          <span class="skill-pill">Notion</span>
+          <span class="skill-pill">Leadership</span>
+          <span class="skill-pill">Jira</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles / Writing Section -->
+    <section class="articles-section" id="writing">
+      <div class="articles-grid">
+        <a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="article-card">
+          <span class="article-tag">PM</span>
+          <h3 class="article-title">Getting started as a product manager: A few tips for newbies</h3>
+        </a>
+
+        <a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="article-card">
+          <span class="article-tag">PM</span>
+          <h3 class="article-title">Building my product management portfolio; so I built an MVP</h3>
+        </a>
+
+        <a href="https://medium.com" target="_blank" rel="noopener noreferrer" class="article-card">
+          <span class="article-tag">FE</span>
+          <h3 class="article-title">How To Make Wine Glasses With Pure HTML & CSS</h3>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer Banner ("LET'S MAKE MAGIC") -->
+    <footer class="footer-section">
+      <a href="#" class="footer-banner-link" data-open-overlay="contact">
+        <h2 class="footer-banner-title">LET'S MAKE MAGIC</h2>
+        <span class="footer-banner-arrow">&#8599;</span>
+      </a>
+
+      <div class="footer-meta-row">
+        <div>&copy; 2025. Made with &hearts; by Adityavir</div>
+        <div class="footer-social-links">
+          <a href="https://www.linkedin.com/in/adityavir-singh-randhawa-953ab0339/" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn</a>
+          <a href="assets/resume.pdf" target="_blank" class="footer-social-link">Resume</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ==========================================================================
+       Overlay Modals: About Me, Work, Contact, Case Studies
+       ========================================================================== -->
+
+  <!-- Overlay: About Me -->
+  <div class="page-overlay" id="overlay-about">
+    <button class="overlay-close-btn" aria-label="Close">&times;</button>
+    <div class="overlay-inner">
+      <div class="about-photos-grid">
+        <div class="about-photo-item">
+          <img src="assets/about_white_shirt.jpg" alt="Florence Portrait">
+        </div>
+        <div class="about-photo-item">
+          <img src="assets/about_cap.jpg" alt="Florence Casual">
+        </div>
+        <div class="about-photo-item">
+          <img src="assets/about_team.jpg" alt="Florence with community team">
+        </div>
+      </div>
+
+      <div class="about-bio-text">
+        <h2 style="font-size: 3rem; color: #fff;">Meet Florence &#128075;</h2>
+        <p>
+          Hi there! I'm Florence, a <strong>Product Manager and Web Designer</strong> with a knack for building meaningful digital experiences that make everyday life easier.
+        </p>
+        <p>
+          I currently work as a Founding PM at Good, where I helped ship Good Online — a curated platform showcasing exceptional products from exceptional creators. I've had the privilege of working across industries like e-commerce, fintech, health tech, retail tech, and software agencies, bringing a well-rounded perspective to every product I touch.
+        </p>
+        <p>
+          My journey into tech started as a developer in 2020, and since then, I've grown into product leadership roles while still flexing my dev and design skills when the need arises.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay: Work (Full Projects Showcase) -->
+  <div class="page-overlay" id="overlay-work">
+    <button class="overlay-close-btn" aria-label="Close">&times;</button>
+    <div class="overlay-inner">
+      <h2 style="font-size: 3.5rem; margin-bottom: 36px; color: #fff;">Selected Work</h2>
+      <div class="projects-grid" style="padding: 0;">
+        <div class="project-card" data-project="good">
+          <div class="project-thumbnail-wrap"><img src="assets/project_good.png" alt="Good"></div>
+          <div class="project-info-bar">
+            <div class="project-title-group"><h3>Good</h3><p>2025</p></div>
+            <div class="project-tags-group"><span class="project-role-badge">Product Management</span></div>
+          </div>
+        </div>
+        <div class="project-card" data-project="okien">
+          <div class="project-thumbnail-wrap"><img src="assets/project_okien.png" alt="Shop Okien"></div>
+          <div class="project-info-bar">
+            <div class="project-title-group"><h3>Shop Okien</h3><p>2025</p></div>
+            <div class="project-tags-group"><span class="project-role-badge">E-Commerce, Web Dev</span></div>
+          </div>
+        </div>
+        <div class="project-card" data-project="devfest">
+          <div class="project-thumbnail-wrap"><img src="assets/project_devfest.png" alt="DevFest"></div>
+          <div class="project-info-bar">
+            <div class="project-title-group"><h3>DevFest Lagos 2025</h3><p>2025</p></div>
+            <div class="project-tags-group"><span class="project-role-badge">Product Lead</span></div>
+          </div>
+        </div>
+        <div class="project-card" data-project="tope">
+          <div class="project-thumbnail-wrap"><img src="assets/project_tope.png" alt="Tope Alabi"></div>
+          <div class="project-info-bar">
+            <div class="project-title-group"><h3>Official Tope Alabi</h3><p>2024</p></div>
+            <div class="project-tags-group"><span class="project-role-badge">Web Dev</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay: Contact Me -->
+  <div class="page-overlay" id="overlay-contact">
+    <button class="overlay-close-btn" aria-label="Close">&times;</button>
+    <div class="overlay-inner">
+      <div class="contact-overlay-card">
+        <div class="contact-art-wrap">
+          <img src="assets/contact_splash.jpg" alt="Vibrant fluid splash art">
+        </div>
+        <div class="contact-info-panel">
+          <h2>Reach out to me</h2>
+          <p>
+            Whether you have questions, collaboration proposals, or a vision waiting to be realized, reaching out is the first step to creating magic together. I'm excited to hear from you and turn your aspirations into reality!
+          </p>
+          <div class="contact-method-item" id="copy-email-btn" title="Click to copy email">
+            <span>&#9993;</span>
+            <span>florenceogunbore@gmail.com</span>
+          </div>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-method-item" style="color: inherit; text-decoration: none;">
+            <span>&#128100;</span>
+            <span>Florence Ogunbore on LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay: Case Study Detail -->
+  <div class="page-overlay" id="overlay-casestudy">
+    <button class="overlay-close-btn" aria-label="Close">&times;</button>
+    <div class="overlay-inner">
+      <div class="case-study-hero">
+        <h2 id="cs-title">Project Title</h2>
+        <p id="cs-subtitle" style="font-size: 1.3rem; color: #a0a0aa; margin-bottom: 24px;">Project Subtitle</p>
+        <div class="case-study-meta">
+          <div><strong>Role:</strong> <span id="cs-role">Product Manager</span></div>
+          <div><strong>Timeline:</strong> <span id="cs-timeline">2025</span></div>
+        </div>
+      </div>
+      <div class="case-study-image">
+        <img src="" id="cs-img" alt="Case Study Screenshot">
+      </div>
+      <div class="case-study-content">
+        <h3>Overview</h3>
+        <p id="cs-overview">Detailed overview text...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
