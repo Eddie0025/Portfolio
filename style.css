@@ -699,26 +699,30 @@ body {
   white-space: nowrap;
   display: flex;
   margin-bottom: 24px;
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
 }
 
 .skills-row {
   display: flex;
-  gap: 36px;
-  animation: skillsTickerLeft 28s linear infinite;
+  gap: 24px;
+  width: max-content;
+  will-change: transform;
+  animation: skillsTickerLeft 40s linear infinite;
 }
 
 .skills-row.reverse {
-  animation: skillsTickerRight 30s linear infinite;
+  animation: skillsTickerRight 40s linear infinite;
 }
 
 @keyframes skillsTickerLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 @keyframes skillsTickerRight {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+  0% { transform: translate3d(-50%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
 }
 
 .skill-pill {
