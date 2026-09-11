@@ -771,16 +771,13 @@ body {
   color: #a0a0b0;
   padding: 10px 24px;
   position: relative;
-  transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  transition: color 0.25s ease;
   user-select: none;
   cursor: pointer;
-  border-radius: 9999px;
 }
 
 .skill-item:hover {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
 }
 
 /* ==========================================================================
