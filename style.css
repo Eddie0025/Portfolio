@@ -725,23 +725,18 @@ body {
   100% { transform: translate3d(0, 0, 0); }
 }
 
-.skill-pill {
-  font-size: 1.25rem;
+.skill-item {
+  font-size: 1.35rem;
   font-weight: 500;
-  color: #e0e0ec;
-  padding: 12px 28px;
-  background: #141419;
-  border: 1px solid var(--border-dark);
-  border-radius: 9999px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-  transition: var(--transition-smooth);
+  color: #a0a0b0;
+  padding: 10px 24px;
+  position: relative;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  user-select: none;
 }
 
-.skill-pill:hover {
-  color: var(--accent-blue);
-  border-color: var(--accent-blue);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px var(--accent-blue-glow);
+.skill-item:hover {
+  color: #ffffff;
 }
 
 /* ==========================================================================
