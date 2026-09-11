@@ -2,15 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Custom cursor follower
-  const cursor = document.querySelector('.cursor-dot');
-  if (cursor) {
-    window.addEventListener('mousemove', (e) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-    });
-  }
-
   // 2. Navigation scroll & dark-mode observer
   const nav = document.querySelector('.site-nav');
   const darkSections = document.querySelectorAll('.intro-section, .featured-work-section');
@@ -43,10 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     if (isOverDark) {
       nav.classList.add('dark-active');
-      if (cursor) cursor.classList.add('dark-mode');
     } else {
       nav.classList.remove('dark-active');
-      if (cursor) cursor.classList.remove('dark-mode');
     }
 
     checkPageReveals();
