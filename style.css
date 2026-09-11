@@ -225,7 +225,7 @@ body {
 
 .hero-bg-title {
   font-family: var(--font-display);
-  font-size: clamp(7rem, 24vw, 28rem);
+  font-size: clamp(4rem, 14vw, 16rem);
   line-height: 0.9;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -337,10 +337,10 @@ body {
 }
 
 .intro-headline {
-  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
   font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: -0.03em;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
 }
 
 .intro-headline span.highlight {
@@ -351,8 +351,8 @@ body {
 }
 
 .intro-body {
-  font-size: 1.15rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.65;
   color: var(--text-light-muted);
 }
 
@@ -432,10 +432,10 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
-  margin-bottom: 60px;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
 }
 
 .sparkle-icon {
@@ -561,9 +561,9 @@ body {
 }
 
 .marquee-text {
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: clamp(2rem, 3vw, 3rem);
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   color: var(--text-light);
 }
 
@@ -684,10 +684,10 @@ body {
 }
 
 .skills-title {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
-  margin-bottom: 48px;
+  letter-spacing: -0.02em;
+  margin-bottom: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -726,10 +726,10 @@ body {
 }
 
 .skill-item {
-  font-size: 1.35rem;
+  font-size: 1.05rem;
   font-weight: 500;
   color: #a0a0b0;
-  padding: 10px 24px;
+  padding: 8px 18px;
   position: relative;
   transition: color 0.3s ease, opacity 0.3s ease;
   user-select: none;
@@ -809,7 +809,7 @@ body {
 
 .footer-banner-title {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 9vw, 9.5rem);
+  font-size: clamp(2.5rem, 5.5vw, 5.5rem);
   line-height: 0.95;
   letter-spacing: 0.03em;
   text-transform: uppercase;
