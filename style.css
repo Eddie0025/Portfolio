@@ -241,7 +241,7 @@ body {
   position: relative;
   z-index: 2;
   margin-top: 160px;
-  width: clamp(220px, 22vw, 360px);
+  width: clamp(170px, 15.5vw, 250px);
   aspect-ratio: 1 / 1.25;
   border-radius: var(--radius-xl);
   overflow: hidden;
