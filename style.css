@@ -299,18 +299,26 @@ body {
   transform: translateX(-4px);
 }
 
+.scroll-content-wrapper {
+  position: relative;
+  z-index: 10;
+  margin-top: 100vh;
+  background-color: var(--bg-primary);
+  box-shadow: 0 -40px 100px rgba(0, 0, 0, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 /* ==========================================================================
    Intro Section (Dark Curved Card)
    ========================================================================== */
 .intro-section {
   position: relative;
-  z-index: 10;
   background-color: var(--bg-dark);
   color: var(--text-light);
   border-radius: var(--radius-xl);
-  margin: 100vh 24px 20px;
+  margin: 0 24px 20px;
   padding: 100px 64px;
-  box-shadow: 0 -30px 100px rgba(0,0,0,0.9), 0 30px 100px rgba(0,0,0,0.6);
+  box-shadow: 0 30px 100px rgba(0,0,0,0.6);
 }
 
 .intro-grid {
