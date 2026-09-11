@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const copyBtn = document.getElementById('copy-email-btn');
   if (copyBtn) {
     copyBtn.addEventListener('click', () => {
-      const email = 'florenceogunbore@gmail.com';
+      const email = 'adityavir0025@gmail.com';
       navigator.clipboard.writeText(email).then(() => {
         const originalText = copyBtn.innerHTML;
         copyBtn.innerHTML = '<span>Copied to Clipboard! ✓</span>';
