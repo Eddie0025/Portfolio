@@ -698,11 +698,15 @@ body {
   gap: 24px;
   width: max-content;
   will-change: transform;
-  animation: skillsTickerLeft 75s linear infinite;
+  animation: skillsTickerLeft 180s linear infinite;
 }
 
 .skills-row.reverse {
-  animation: skillsTickerRight 75s linear infinite;
+  animation: skillsTickerRight 180s linear infinite;
+}
+
+.skills-row-wrap:hover .skills-row {
+  animation-play-state: paused;
 }
 
 @keyframes skillsTickerLeft {
