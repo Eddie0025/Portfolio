@@ -771,12 +771,16 @@ body {
   color: #a0a0b0;
   padding: 10px 24px;
   position: relative;
-  transition: color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease;
   user-select: none;
+  cursor: pointer;
+  border-radius: 9999px;
 }
 
 .skill-item:hover {
   color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================
@@ -1701,5 +1705,149 @@ body {
   .what-i-do-card {
     padding: 32px 28px;
     min-height: auto;
+  }
+}
+
+/* ==========================================================================
+   Skills Detail Overlay Page
+   ========================================================================== */
+.skills-overlay-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+
+.skills-page-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 56px;
+}
+
+.skills-page-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b92ff;
+  background: rgba(139, 146, 255, 0.12);
+  border: 1px solid rgba(139, 146, 255, 0.25);
+  margin-bottom: 20px;
+}
+
+.skills-page-title {
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 18px;
+  line-height: 1.15;
+}
+
+.skills-page-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: rgba(215, 220, 235, 0.75);
+}
+
+.skills-categories-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.skill-category-card {
+  background: rgba(22, 22, 28, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skill-category-card:hover {
+  border-color: rgba(139, 146, 255, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(139, 146, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.skill-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.skill-cat-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.skill-cat-title {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.skill-cat-count {
+  font-size: 0.85rem;
+  color: rgba(160, 165, 185, 0.7);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skill-pills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(240, 243, 255, 0.9);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+.skill-pill:hover {
+  background: rgba(139, 146, 255, 0.15);
+  border-color: rgba(139, 146, 255, 0.45);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .skill-category-card {
+    padding: 24px 20px;
+  }
+  .skill-cat-title {
+    font-size: 1.35rem;
+  }
+  .skill-pill {
+    font-size: 0.88rem;
+    padding: 8px 15px;
   }
 }

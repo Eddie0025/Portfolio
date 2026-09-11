@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     about: document.getElementById('overlay-about'),
     work: document.getElementById('overlay-work'),
     contact: document.getElementById('overlay-contact'),
+    skills: document.getElementById('overlay-skills'),
     casestudy: document.getElementById('overlay-casestudy')
   };
 
@@ -166,6 +167,13 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         openOverlay(target);
       }
+    });
+  });
+
+  // Open skills overlay when clicking on any animated skill ticker item
+  document.querySelectorAll('.skill-item').forEach(skillEl => {
+    skillEl.addEventListener('click', () => {
+      openOverlay('skills');
     });
   });
 
