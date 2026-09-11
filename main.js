@@ -122,37 +122,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Project cards trigger case study overlay
   const caseStudies = {
-    good: {
-      title: 'Good',
-      subtitle: 'A Curated E-Commerce Platform for Exceptional Products',
-      role: 'Founding Product Manager',
-      timeline: '2025 • Ongoing',
+    cerebx: {
+      title: 'CerebX',
+      subtitle: 'Advanced AI/ML Decision Intelligence Platform',
+      role: 'Product Management · AI/ML',
+      timeline: '2026',
       img: 'assets/project_good.png',
-      overview: 'As the founding Product Manager at Good, I led the product vision and execution for a new kind of e-commerce platform, one designed to elevate everyday life by connecting customers with exceptional products from Nigeria\'s top independent creators. From launching curated discovery experiences to managing offline-to-online shopping flows, I worked cross-functionally with design, engineering, operations, and marketing to bring Good from 0 to live.'
+      overview: 'Led product definition and strategy for CerebX, an AI/ML powered platform designed to optimize decision workflows and complex data processing.'
     },
-    okien: {
-      title: 'Shop Okien',
-      subtitle: 'Modern E-Commerce Experience for Ready-to-Wear Fashion',
-      role: 'E-Commerce & Web Development',
-      timeline: '2025 • Shipped',
+    nexus: {
+      title: 'Nexus',
+      subtitle: 'Multi-Agent Intelligence & Coordination Engine',
+      role: 'Product Management · AI/ML',
+      timeline: '2026',
       img: 'assets/project_okien.png',
-      overview: 'Built a high-performance fashion shopping storefront focusing on conversion optimization, fluid mobile shopping, and visual brand identity. Seamlessly integrated cart workflows, inventory management, and fast-checkout experiences.'
+      overview: 'Spearheaded product discovery and architecture requirements for Nexus, a sovereign multi-agent coordination system.'
     },
-    devfest: {
-      title: 'DevFest Lagos 2025',
-      subtitle: 'One of the Largest Developer Gatherings in Sub-Saharan Africa',
-      role: 'Product Lead / Organizer',
-      timeline: '2025 • Completed',
+    saber: {
+      title: 'SABER',
+      subtitle: 'AI Research & Synthetic Data Benchmark Platform',
+      role: 'Product Management · AI Research',
+      timeline: '2026',
       img: 'assets/project_devfest.png',
-      overview: 'Led the digital experience and attendee platform for DevFest Lagos, coordinating schedule discovery, speaker logistics, and community engagement for over 3,000 attendees.'
+      overview: 'Directed product strategy for SABER, translating cutting-edge AI research into scalable model evaluation benchmarks.'
     },
-    tope: {
-      title: 'Official Tope Alabi',
-      subtitle: 'Official Artist Portfolio and Music Discovery Platform',
-      role: 'Web Development & UI Design',
-      timeline: '2024 • Shipped',
+    agrosense: {
+      title: 'Agrosense',
+      subtitle: 'Smart Agriculture & Sensor Analytics AI Platform',
+      role: 'Product Management · AI / Platform',
+      timeline: '2026',
       img: 'assets/project_tope.png',
-      overview: 'Engineered an immersive media website featuring discography streaming links, concert tour scheduling, press kit distribution, and mobile-first responsiveness.'
+      overview: 'Defined product roadmaps and platform capabilities for Agrosense, combining IoT sensor data with predictive AI modeling.'
+    },
+    athena: {
+      title: 'ATHENA',
+      subtitle: 'AI Governance & Compliance Assurance Framework',
+      role: 'Product Management · AI Governance',
+      timeline: '2026',
+      img: 'assets/about_team.jpg',
+      overview: 'Built product requirements and governance standards for ATHENA to ensure reliable, audit-ready AI system deployments.'
+    },
+    redvector: {
+      title: 'Red Vector AI',
+      subtitle: 'Autonomous Threat Detection & Sovereign Cybersecurity',
+      role: 'Product Management · Cybersecurity',
+      timeline: '2026',
+      img: 'assets/about_white_shirt.jpg',
+      overview: 'Managed product development for Red Vector AI, driving automated threat vector analysis and cybersecurity intelligence.'
+    },
+    sensingbandage: {
+      title: 'Wireless Sensing Bandage',
+      subtitle: 'Flexible Biomedical Sensing & Real-Time Monitoring System',
+      role: 'Product / Research · IoT',
+      timeline: '2025/26',
+      img: 'assets/about_cap.jpg',
+      overview: 'Researched and managed hardware-software integration for a wireless biomedical sensing bandage for non-invasive health tracking.'
     }
   };
 
